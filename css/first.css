@@ -1,0 +1,231 @@
+div.navbar-collapse ul.navbar-nav>li a {
+    color: #fff;
+    background-color: transparent;
+    opacity: 0.6
+}
+
+div.navbar-collapse ul.navbar-nav>li a:hover {
+    opacity: 1
+}
+
+.item div.banner-text {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+}
+
+.item div.banner-text>img {
+    position: relative;
+    top: 250px;
+    left: -20%
+}
+
+.item div.banner-text>p {
+    position: relative;
+    top: 50%;
+    left: -20%;
+}
+
+.item div.banner-text a.txt3 {
+    display: block;
+    width: 136px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 auto;
+    background-color: #7A797D;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 70%;
+    left: -20%; 
+    overflow: hidden;
+}
+.item div.banner-text a.txt3 span{
+    display:inline-block;
+    transition: transform 0.3s;
+    background: #838286;
+    padding: 8px 40px;
+}
+.item div.banner-text a.txt3::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 8px 40px;
+    width: 100%;
+    height: 100%;
+    background: #c91425;
+    color: #fff;
+    content: attr(data-hover);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    transform: translateX(-25%);
+}
+
+.txt3:hover span,
+.txt3:focus span {
+   
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.txt3:hover::before,
+.txt3:focus::before {
+    background: #c91425;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.icon{
+    display: inline-block;
+    /* height:200px;            */
+    /* position:absolute;
+    left:35%;
+    height:79px;
+    top:38px; */
+    vertical-align: middle;
+    z-index: 99;
+    transition: all .4s ease-in-ou;
+}
+.business_icon{ 
+    background-color: #eaeaea;
+    box-shadow: 0 0 0 30px transparent;
+    width:175px;
+    height:175px;
+    line-height:175px;
+    border-radius: 50%;
+}       
+.icon1{
+    background: url('../images/static/icon_list01.png')no-repeat center center  ;
+    width: 80px;
+    height:79px;
+
+}
+.icon2{
+    background:url('../images/static/icon_list02.png') no-repeat ;
+    width:80px;
+    height:79px;
+    
+}
+.icon3{
+    background: url('../images/static/icon_list03.png') no-repeat ;
+    width: 80px;
+    height:79px;
+    
+}
+.icon4{
+    background:url('../images/static/icon_list04.png') no-repeat;
+    width:80px;
+    height:79px;
+    
+}
+.business_txt>h2{
+    font-size: 22px;
+}
+.business_list>ul.row li{
+    list-style: none;
+}
+.business_list>ul.row li a{
+    text-decoration:none;
+}
+body{
+    text-align: center
+}
+.business_icon{
+    margin:0 auto;
+}
+
+/*txt3*/
+
+
+/*第二页*/
+.counters{
+    background: url('../images/counter_bck.jpg')no-repeat;
+    width:100%;
+    height:708px;
+    position: relative;
+    overflow: hidden;
+    /*随着页面的滚动轴背景图片不会移动*/
+    background-attachment: fixed;
+}
+.contact_btn{
+    display:inline-block;
+    color:#fff;
+    font-size:14px;
+    font-weight: bold;
+    border:none;
+    overflow: hidden;
+    margin: 0 15px;
+    position: relative;
+    /*将字体切换成大写*/
+    text-transform: uppercase;
+}
+.con-tit2 h1{
+    color:#fff;
+    margin-bottom:20px; 
+}
+.counters .con-tit2{
+    margin-top:150px;
+    padding-bottom:20px;
+}
+.counters .con-tit .h4{
+    color:#dadada;
+    line-height:32px;
+    margin-top:25px;
+    margin-bottom:35px;
+}
+.contact_btn span{
+    display:inline-block;
+    transition: transform 0.3s;
+    background: #818385;
+    padding: 10px 30px;
+    font-family: "Arial"
+}
+
+.contact_btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 10px 30px;
+    width: 100%;
+    height: 100%;
+    background: #c91425;
+    color: #fff;
+    content: attr(data-hover);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    transform: translateY(-80%);
+}
+
+.contact_btn:hover span,
+.contact_btn:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.contact_btn:hover::before,
+.contact_btn:focus::before {
+    z-index: 10;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.q_counter_holder span.counter {
+    font-size: 72px;
+    line-height: 1em;
+    color: #fff;
+    display: inline-block!important;
+    height: 1em;
+}
+.q_counter_holder p.counter_text {
+    font-size:16px;
+    letter-spacing: 1px;/*设置字符间距*/
+    margin-top:8px;
+	color:#ffffff;
+}
+
